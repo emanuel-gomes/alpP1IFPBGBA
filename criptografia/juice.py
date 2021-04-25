@@ -5,11 +5,8 @@ quebra = list(troca)
 nome = quebra[0:-6]
 mutacao = ''
 cont = len(nome)
-
 for posicao in nome:
-    id = crip.index(posicao) + 1
-    mutacao+= str(id)
+    mutacao+= str(crip.index(posicao) + 1)
     cont-=1
-    if(cont != 0):
-        mutacao+= '_'
+    if(cont != 0):mutacao+= '_'
 print(mutacao+'.juice')
